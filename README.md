@@ -1,30 +1,36 @@
-#Fire Detection with Convolutional Neural Networks
+Fire Detection with CNN
+Project Overview
+This project aims to build a Convolutional Neural Network (CNN) model to detect fire in images. The model identifies images containing fire or smoke and labels them accordingly.
 
-##Project Description
+Dataset
+The dataset consists of images with and without fire. It has been split into training and testing sets. Data augmentation is used to enhance training.
 
-The "Fire Detection" project uses Convolutional Neural Networks (CNNs) to detect fire in images. The aim is to classify images as "fire" or "no fire" to improve safety in various environments. This project involves training a CNN, exploring data, and evaluating model performance to create a reliable fire detection system.
+Model Architecture
+The CNN model comprises:
 
-##Objective
+Convolutional Layers: Two layers with 32 and 64 filters, respectively.
+Pooling Layers: Max pooling with 2x2 pool size.
+Fully Connected Layer: 128 units with ReLU activation.
+Output Layer: 1 unit with sigmoid activation for binary classification.
+Model Training
+Optimizer: Adam
+Loss Function: Binary cross-entropy
+Metrics: Accuracy
+Epochs and Batch Size: Configured based on dataset size
+Predictions and Visualization
+For testing, the model predicts whether a given image contains fire. If it does, the label "Fire" is added to the image.
 
-The goal of this project is to develop a robust model that can detect fire in images, providing accurate predictions to help in safety and emergency response.
+Challenges and Solutions
+Data Imbalance: Addressed with data augmentation and balanced datasets.
+Overfitting: Mitigated with early stopping and dropout layers.
+Model Complexity: Simplified for efficiency and robustness.
+Results
+The model achieves satisfactory accuracy on the test set, demonstrating its ability to detect fire in images.
 
-##Dataset
-
-The dataset consists of images labeled as "fire" or "no fire." Each image represents a scene where fire may or may not be present. This data is used to train and evaluate the fire detection model.
-
-##Methodology
-
-Data Preparation: Normalize images and apply data augmentation to create a robust dataset. Techniques include rotation, flipping, and scaling.
-Model Design: Construct a CNN with multiple convolutional layers for feature extraction and fully connected layers for classification.
-Model Training: Train the model on a training dataset using early stopping to prevent overfitting.
-Model Evaluation: Evaluate the model on a validation set to measure accuracy and loss. Use additional metrics like precision and recall to ensure accuracy.
-Model Deployment: Prepare the model for real-world use, potentially creating a simple user interface for predictions.
-Expected Outcome
-Develop a reliable fire detection model with high accuracy.
-Ensure the model generalizes well to new data without overfitting.
-Provide a foundation for implementing the model in safety systems and emergency response applications.
-Running the Project
-To train the model, run:
-
-
-
+Repository Contents
+Python script for the model and training
+Trained model weights
+Example predictions
+README.md
+Conclusion
+This project successfully creates a fire detection model using a CNN, offering potential applications in safety and security.
