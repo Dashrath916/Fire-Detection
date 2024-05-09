@@ -1,4 +1,4 @@
-##Fire Detection with Convolutional Neural Networks
+#Fire Detection with Convolutional Neural Networks
 
 ##Project Description
 
