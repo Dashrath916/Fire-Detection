@@ -13,15 +13,24 @@ The dataset consists of images with and without fire. It has been split into tra
 The CNN model comprises:
 
 Convolutional Layers: Two layers with 32 and 64 filters, respectively.
+
 Pooling Layers: Max pooling with 2x2 pool size.
+
 Fully Connected Layer: 128 units with ReLU activation.
+
 Output Layer: 1 unit with sigmoid activation for binary classification.
-Model Training
+
+## Model Training
 Optimizer: Adam
+
 Loss Function: Binary cross-entropy
+
 Metrics: Accuracy
+
 Epochs and Batch Size: Configured based on dataset size
-Predictions and Visualization
+
+## Predictions and Visualization
+
 For testing, the model predicts whether a given image contains fire. If it does, the label "Fire" is added to the image.
 
 ## Challenges and Solutions 
